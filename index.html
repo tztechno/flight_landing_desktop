@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>羽田空港 (RJTT) 着陸フライトシミュレーター — Haneda Landing 3D Flight Simulator</title>
+    <meta name="description" content="東京羽田国際空港 (RJTT) の Runway 34L 東京湾旋回アプローチ、34R ILS進入、都心上空新ルート、ゴーアラウンド、6自由度手動操縦を再現した3D WebGLフライトシミュレーター。" />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- 3D WebGL Canvas Container -->
+      <div id="viewport-container"></div>
+
+      <!-- Red Alert Crash Hazard Overlay -->
+      <div id="crash-overlay"></div>
+
+      <!-- Top Header Bar -->
+      <header class="top-header">
+        <div class="brand-section">
+          <span class="airport-badge" id="header-title">羽田空港 (RJTT / HND)</span>
+          <span class="runway-badge" id="header-runway-tag">Runway 34L / 34R / 16L 着陸アプローチ</span>
+        </div>
+
+        <div class="header-right">
+          <!-- View Selector Buttons (Short keywords) -->
+          <div id="view-selector-container"></div>
+          <!-- Language Toggle Button -->
+          <button class="lang-btn" id="lang-toggle-btn">JA / EN</button>
+        </div>
+      </header>
+
+      <!-- Primary Flight Display (PFD HUD - Left) -->
+      <div class="pfd-container">
+        <canvas id="pfd-canvas" width="250" height="250"></canvas>
+      </div>
+
+      <!-- Right Flight Control & Dynamics Panel -->
+      <div class="control-panel-container" id="control-panel-container"></div>
+
+      <!-- Bottom Telemetry & Timeline Dock -->
+      <div id="telemetry-container"></div>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
