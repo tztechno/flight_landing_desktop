@@ -7,6 +7,10 @@ A realistic Haneda Airport 3D Flight Landing Simulator built with **Three.js** a
 - **Flight Physics & Autopilot / Manual Control**: Realistic aerodynamics, ILS glideslope tracking, and landing evaluations.
 - **Cross-Platform**: Native desktop application for macOS and Windows.
 
+## Manual & User Guides / 取扱説明書
+- 🇯🇵 [日本語マニュアル (MANUAL_JA.md)](./MANUAL_JA.md) - インストール方法、操作一覧、PAPI・計器の見方、着陸採点基準
+- 🇺🇸 [English User Manual (MANUAL_EN.md)](./MANUAL_EN.md) - Installation guide, keyboard shortcuts, PAPI/PFD HUD guides, scoring system
+
 ## Development
 
 ```bash
